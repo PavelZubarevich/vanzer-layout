@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanzer</title>
+  <script src="https://kit.fontawesome.com/5321ff6f92.js" crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script src="https://kit.fontawesome.com/5321ff6f92.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a href="/"><img src="./assets/img/Logo.png" alt="logo"></a>
+    </div>
+    <div class="burger" id="burger">
+      <span></span>
+    </div>
+    <nav class="header__menu" id="burger-menu">
+      <ul>
+        <template id="header-menu-item">
+          <li class="header__menuItem">
+            <button></button>
+          </li>
+        </template>
+      </ul>
+      <div class="header__social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-behance"></i></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <nav class="section-pagination" id="pagination">
+      <template id="section-pagination-item">
+        <div class="section-pagination__item">
+          <p class="section-pagination__sectionNumber"></p>
+          <span class="section-pagination__sectionBullet">
+            <p class="section-pagination__sectionTitle"></p>
+          </span>
+          <span class="section-pagination__sectionLine"></span>
+        </div>
+      </template>
+    </nav>
+    <section class="main" id="main" data-title="home" data-content="dark">
+      <div class="main__background">
+        <picture>
+          <source srcset="./assets/img/main/top_background.webp" type="image/webp">
+          <img src="./assets/img/main/top_background.jpg" alt="city background" />
+        </picture>
+        <div class="main__scroll">
+          <img src="./assets/img/icons/mouse-outline.png" alt="mouse icon">
+        </div>
+      </div>
+      <div class="main__content container">
+        <h1 class="main__title">vanzer</h1>
+        <p class="main__subtitle">FREE CREATIVE PSD TEMPLATE FOR YOU</p>
+        <div class="main__divider"></div>
+        <button class="button button_text">READ MORE <i class="fa-solid fa-arrow-right-long"></i></button>
+      </div>
+      <div class="main__social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-behance"></i></a>
+      </div>
+    </section>
+    <section class="about" id="about" data-title="about us" data-content="light">
+      <div class="about__background">
+        <picture>
+          <source srcset="./assets/img/about/background_1.webp" type="image/webp">
+          <img src="./assets/img/about/background_1.jpg" alt="bg" />
+        </picture>
+        <picture>
+          <source srcset="./assets/img/about/background.webp" type="image/webp">
+          <img src="./assets/img/about/background.jpg" alt="bg" />
+        </picture>
+      </div>
+      <div class="about__content container">
+        <h2 class="about__title"><span>CREATIVE</span> STUDIO</h2>
+        <div class="about__divider divider divider_lgr"></div>
+        <p class="about__text">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam.
+          Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id
+          elit. Maecenas faucibus mollis interdum.</p>
+      </div>
+    </section>
+    <section class="services" id="services" data-title="services" data-content="dark">
+      <div class="services__background">
+        <picture>
+          <source srcset="./assets/img/services/services_background.webp" type="image/webp">
+          <img src="./assets/img/services/services_background.jpg" alt="background" />
+        </picture>
+      </div>
+      <div class="services__content container">
+        <div class="services__title section-title section-title_w">
+          <h2>services</h2>
+          <p>services</p>
+          <div class="divider divider_org"></div>
+        </div>
+        <div class="services__preview tabs">
+          <ul class="services__list tabs-buttons">
+            <li class="services__listItem">
+              <button class="button-text" data-tab="industrial-tab">INDUSTRIAL DESIGN</button>
+            </li>
+            <li class="services__listItem">
+              <button class="button-text" data-tab="web-tab">WEB DESIGN</button>
+            </li>
+            <li class="services__listItem">
+              <button class="button-text" data-tab="photo-tab">PHOTOGRAPHY</button>
+            </li>
+          </ul>
+          <div class="services__services tabs-content">
+            <div class="services__service" id="industrial-tab">
+              <h3>INDUSTRIAL DESIGN</h3>
+              <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare
+                sem lacinia quam venenatis vestibulum.</p>
+            </div>
+            <div class="services__service" id="web-tab">
+              <h3>WEB design</h3>
+              <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque
+                ornaresem</p>
+            </div>
+            <div class="services__service" id="photo-tab">
+              <h3>PHOTOGRAPHY</h3>
+              <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare
+                semlacinia quam venenatis vestibulum.jdhgldflg dlkfjg lacinia quam venenatis vestibulum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio" data-title="portfolio" data-content="dark">
+      <div class="portfolio__background">
+        <picture>
+          <source srcset="./assets/img/portfolio/portfolio_background.webp" type="image/webp">
+          <img src="./assets/img/portfolio/portfolio_background.jpg" alt="background" />
+        </picture>
+      </div>
+      <div class="portfolio__content container">
+        <div class="portfolio__title section-title section-title_w">
+          <h2>portfolio</h2>
+          <p>portfolio</p>
+          <div class="divider divider_org"></div>
+        </div>
+        <div class="portfolio__carousel">
+          <div class="portfolio__items swiper">
+            <div class="swiper-wrapper">
+              <div class="portfolio__item portfolio-item swiper-slide">
+                <div class="portfolio-item__left">
+                  <picture>
+                    <source srcset="./assets/img/portfolio/carousel_1.webp" type="image/webp">
+                    <img src="./assets/img/portfolio/carousel_1.jpg" alt="machine" />
+                  </picture>
+                </div>
+                <div class="portfolio-item__center">
+                  <div class="portfolio-item__centerImg">
+                    <picture>
+                      <source srcset="./assets/img/portfolio/carousel_2.webp" type="image/webp">
+                      <img src="./assets/img/portfolio/carousel_2.jpg" alt="cat" />
+                    </picture>
+                  </div>
+                  <div class="portfolio-item__centerContent">
+                    <h4>COFFEE CUP</h4>
+                    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  </div>
+                  <div class="portfolio-item__centerLink">
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-item__right">
+                  <picture>
+                    <source srcset="./assets/img/portfolio/carousel_3.webp" type="image/webp">
+                    <img src="./assets/img/portfolio/carousel_3.jpg" alt="bilding" />
+                  </picture>
+                </div>
+              </div>
+              <div class="portfolio__item portfolio-item swiper-slide">
+                <div class="portfolio-item__left">
+                  <picture>
+                    <source srcset="./assets/img/portfolio/carousel_1.webp" type="image/webp">
+                    <img src="./assets/img/portfolio/carousel_1.jpg" alt="machine" />
+                  </picture>
+                </div>
+                <div class="portfolio-item__center">
+                  <div class="portfolio-item__centerImg">
+                    <picture>
+                      <source srcset="./assets/img/portfolio/carousel_1.webp" type="image/webp">
+                      <img src="./assets/img/portfolio/carousel_1.jpg" alt="cat" />
+                    </picture>
+                  </div>
+                  <div class="portfolio-item__centerContent">
+                    <h4>COFFEE CUP</h4>
+                    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  </div>
+                  <div class="portfolio-item__centerLink">
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-item__right">
+                  <picture>
+                    <source srcset="./assets/img/portfolio/carousel_3.webp" type="image/webp">
+                    <img src="./assets/img/portfolio/carousel_3.jpg" alt="bilding" />
+                  </picture>
+                </div>
+              </div>
+              <div class="portfolio__item portfolio-item swiper-slide">
+                <div class="portfolio-item__left">
+                  <picture>
+                    <source srcset="./assets/img/portfolio/carousel_3.webp" type="image/webp">
+                    <img src="./assets/img/portfolio/carousel_3.jpg" alt="machine" />
+                  </picture>
+                </div>
+                <div class="portfolio-item__center">
+                  <div class="portfolio-item__centerImg">
+                    <picture>
+                      <source srcset="./assets/img/portfolio/carousel_2.webp" type="image/webp">
+                      <img src="./assets/img/portfolio/carousel_2.jpg" alt="cat" />
+                    </picture>
+                  </div>
+                  <div class="portfolio-item__centerContent">
+                    <h4>COFFEE CUP</h4>
+                    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  </div>
+                  <div class="portfolio-item__centerLink">
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                  </div>
+                </div>
+                <div class="portfolio-item__right">
+                  <picture>
+                    <source srcset="./assets/img/portfolio/carousel_1.webp" type="image/webp">
+                    <img src="./assets/img/portfolio/carousel_1.jpg" alt="bilding" />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__carouselControls">
+            <div class="portfolio__categories">
+              <ul>
+                <li class="portfolio__category active"><button class="button-text">Industrial Design</button></li>
+                <li class="portfolio__category"><button class="button-text">Web Design</button></li>
+                <li class="portfolio__category"><button class="button-text">photography</button></li>
+              </ul>
+            </div>
+            <div class="portfolio__pagination">
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog" id="blog" data-title="recent Blog" data-content="light">
+      <div class="blog__content container">
+        <div class="blog__title section-title">
+          <h2>recent Blog</h2>
+          <p>Blog</p>
+          <div class="divider divider_org"></div>
+        </div>
+        <div class="blog__posts">
+          <div class="blog__bigPost">
+            <div class="blog__bigimage">
+              <picture>
+                <source srcset="./assets/img/blog/blog_background.jpg" type="image/webp">
+                <img src="./assets/img/blog/blog_background.jpg" alt="bg" />
+              </picture>
+            </div>
+            <div class="blog__bigContent">
+              <h3>Ridiculus Fringilla Vulputate</h3>
+              <p>Photography / Today / by Crophos</p>
+            </div>
+          </div>
+          <div class="blog__postsList">
+            <ul>
+              <li class="blog__post">
+                <h3>Quam Sit Ridiculus</h3>
+                <p>Industrial Design / Yesterday / by John Doe</p>
+              </li>
+              <li class="blog__post">
+                <h3>Ligula Mattis Tellus</h3>
+                <p>Photography / June, 18, 2016 / by Michael Doe</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact" data-title="contact" data-content="bark">
+      <div class="contact__background">
+        <picture>
+          <source srcset="./assets/img/contacts/contacts_background.webp" type="image/webp">
+          <img src="./assets/img/contacts/contacts_background.jpg" alt="bg" />
+        </picture>
+      </div>
+      <div class="contact__body">
+        <div class="container">
+          <div class="contact__content">
+            <div class="contact__title section-title section-title_w">
+              <h2>Contact</h2>
+              <p>ct</p>
+              <div class="divider divider_org"></div>
+            </div>
+            <div class="contact_contacts">
+              <div class="contact__item">
+                <div class="contact__icon"><i class="fa-regular fa-envelope"></i></div>
+                <div class="contact__info">
+                  <h4>e-mail</h4>
+                  <a href="mailto:mail@htmlacademy.ru">crophos@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact__item">
+                <div class="contact__icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact__info">
+                  <h4>Phone</h4>
+                  <a href="tel:00000000">( 541 ) 754 - 3010</a>
+                </div>
+              </div>
+              <div class="contact__item">
+                <div class="contact__icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact__info">
+                  <h4>Address</h4>
+                  <p>Crophos Inc.
+                    76 Camptown Road
+                    Chicago, IL 60710
+                    United States</p>
+                </div>
+              </div>
+            </div>
+            <footer class="footer">
+              <p>
+                Copyright © 2016, All Right Reserved. Designed by Crophos
+              </p>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="contact__rigth">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.788679429761!2d27.649036332950505!3d53.935498074497154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7a5eeb323c77f8d0!2zNTPCsDU2JzA3LjgiTiAyN8KwMzknMTIuNyJF!5e0!3m2!1sru!2sby!4v1666130124298!5m2!1sru!2sby"
+          width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" class="contact__map"></iframe>
+        <div class="contact__form form">
+          <form action="">
+            <div class="contact__top">
+              <input type="text" class="form__input" placeholder="Your Name">
+              <input type="text" class="form__input" placeholder="Your E-Mail">
+            </div>
+            <div class="contact__input">
+              <input type="text" class="form__input" placeholder="Your Topic">
+            </div>
+            <div class="contact__input">
+              <textarea name="" id="" cols="30" rows="10" class="form__input form__textArea"
+                placeholder="Message"></textarea>
+            </div>
+            <input type="submit" class="form__submit" value="SEND MESSAGE">
+          </form>
+        </div>
+      </div>
+
+    </section>
+  </main>
+</body>
+
+</html>
